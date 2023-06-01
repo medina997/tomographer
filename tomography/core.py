@@ -8,7 +8,7 @@ from skimage import transform
 from scipy.interpolate import interp1d
 from scipy import stats
 from scipy import sparse
-from scipy.misc import toimage
+#from scipy.misc import toimage
 from scipy.spatial.distance import pdist, squareform
 from collections import Counter
 from typing import *

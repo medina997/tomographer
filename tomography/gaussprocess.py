@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RBF, WhiteKernel, ConstantKernel as C
 from sklearn.cluster import KMeans
-from gp_extras.kernels import HeteroscedasticKernel
+import gp_extras.gp_extras.kernels.kernels_non_stationary
 from collections import Counter
 from typing import *
 from scipy.stats import norm
