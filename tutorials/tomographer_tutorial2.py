@@ -21,8 +21,9 @@ from random import sample
 import networkx as nx
 from backspinpy import CEF_obj
 # Tomography
-import tomography
-from tomography.utils import pad_to_cube, pad_to_square, shift_simmetrize
+import sys
+sys.path.append('/media/hillierlab/6b8db916-205e-4bc2-bc7a-ac183d8928f1/data/tomographer')
+import tomography.utils
 from brainmap import *
 from tomography.core import build_Design_Matrix
 from tomography import get_x, get_plate, colorize, normalize_AUC
@@ -52,9 +53,9 @@ from sklearn.manifold import TSNE
 from skimage.measure import find_contours
 from skimage.morphology import convex_hull_image
 from sklearn.decomposition import FactorAnalysis, NMF, non_negative_factorization, PCA
-from tomographer.tutorials.helpers import *
+from tutorials.helpers import *
 sys.path.insert(0, os.path.abspath('../'))
-from tomographer.tutorials.data_loaders import *
+from tutorials.data_loaders import *
 
 np.random.seed(11)
 # Load the data in a dictionary of pd.DataFrames
